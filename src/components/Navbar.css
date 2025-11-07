@@ -1,0 +1,51 @@
+.brand-fancy {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7b2ff7 0%, #2af598 100%);
+  box-shadow: 0 4px 12px rgba(43, 37, 63, 0.25);
+  flex-shrink: 0;
+}
+
+.brand-at {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(90deg, #ff7a18, #af002d 50%, #7b2ff7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+  margin-top: 2px;
+}
+
+/* adjust spacing on small screens */
+@media (max-width: 768px) {
+  .brand-text { display: none; } /* show compact badge only on small screens */
+}
