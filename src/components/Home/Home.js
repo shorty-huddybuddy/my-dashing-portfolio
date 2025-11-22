@@ -8,7 +8,7 @@ import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaMedium } from "react-icons/fa";
 
 function Home() {
   return (
@@ -84,6 +84,16 @@ function Home() {
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://medium.com/@pradhand13092004"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <FaMedium />
                 </a>
               </li>
             </ul>

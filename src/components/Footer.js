@@ -1,5 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn, FaMedium } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -13,11 +18,11 @@ function Footer() {
         <Col md="4" className="footer-copywright">
           {/* <h3>No Copyright </h3> */}
         </Col>
-        {/* <Col md="4" className="footer-body">
+        <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/shorty-huddybuddy"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -27,17 +32,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
+                href="https://www.linkedin.com/in/dinesh-pradhan-1865101b9/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -47,7 +42,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/soumyajit4419"
+                href="https://www.instagram.com/dinesh2oo4/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -55,8 +50,18 @@ function Footer() {
                 <AiFillInstagram />
               </a>
             </li>
+            <li className="social-icons">
+              <a
+                href="https://medium.com/@pradhand13092004"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaMedium />
+              </a>
+            </li>
           </ul>
-        </Col> */}
+        </Col>
       </Row>
     </Container>
   );
