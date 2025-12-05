@@ -7,7 +7,7 @@ import editor from "../../Assets/Projects/college-community.png";
 import finaura from "../../Assets/Projects/finaura.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/dookan.png";
-import eternal from "../../Assets/Projects/suicide.png"; // Using placeholder, replace with actual ETERNAL image
+import eternal from "../../Assets/Projects/enternal.png"; // Using placeholder, replace with actual ETERNAL image
 
 function Projects() {
   return (
