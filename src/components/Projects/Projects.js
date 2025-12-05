@@ -27,6 +27,7 @@ function Projects() {
               title="Finaura"
               description="Finaura is an AI-powered financial assistant that simplifies investment planning, portfolio management, and financial education. It empowers users with real-time insights, personalized suggestions, and smart financial tools — all in one seamless platform."
               ghLink="https://github.com/shorty-huddybuddy/Finaura"
+              demoLink="https://finaura-kohl.vercel.app/"
               techStack={[
                 "Next.js",
                 "Go (Golang)",
