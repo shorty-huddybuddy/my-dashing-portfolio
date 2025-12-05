@@ -18,16 +18,16 @@ function ProjectCards(props) {
   };
 
   return (
-    <Card className="project-card-view">
+    <Card className="project-card-view" style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
+      <Card.Body style={{ display: "flex", flexDirection: "column", flex: 1 }}>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
         {/* tech stack chips (inside card) */}
         {props.techStack && props.techStack.length > 0 && (
-          <div>
+          <div style={{ marginBottom: "auto" }}>
             {props.techStack.map((t) => (
               <span key={t} style={chipStyle}>
                 {t}
@@ -35,26 +35,28 @@ function ProjectCards(props) {
             ))}
           </div>
         )}
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+        <div style={{ marginTop: "auto", paddingTop: "15px" }}>
+          <Button variant="primary" href={props.ghLink} target="_blank">
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
           </Button>
-        )}
+          {"\n"}
+          {"\n"}
+
+          {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <CgWebsite /> &nbsp;
+              {"Demo"}
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
