@@ -70,7 +70,7 @@ function AboutCard(props) {
 				<blockquote className="blockquote mb-0">
 					<p style={{ textAlign: "justify" }}>
 						Hi everyone! I’m <span className="purple">Dinesh Pradhan</span>{" "}
-						from <span className="purple">a undergrad student at IIIT Allahabad</span>.
+						<span className="purple">a undergrad student at IIIT Allahabad</span>.
 						<br />
 						{/* I’m currently working as a{" "}
 						<span className="purple">Software Developer</span> at{" "}
