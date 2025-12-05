@@ -7,6 +7,7 @@ import editor from "../../Assets/Projects/college-community.png";
 import finaura from "../../Assets/Projects/finaura.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/dookan.png";
+import eternal from "../../Assets/Projects/suicide.png"; // Using placeholder, replace with actual ETERNAL image
 
 function Projects() {
   return (
@@ -20,6 +21,25 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={eternal}
+              isBlog={false}
+              title="ETERNAL - Solana Token Analytics"
+              description="Real-time meme coin data aggregation platform with multi-source intelligence, WebSocket streaming, and Redis caching. Features sub-100ms response times, 7-day price tracking, and live updates every 3s."
+              ghLink="https://github.com/shorty-huddybuddy/meme-coin-aggregator"
+              demoLink="https://meme-coin-aggregator-production.up.railway.app"
+              techStack={[
+                "Node.js",
+                "TypeScript",
+                "Redis",
+                "Socket.io",
+                "Express.js",
+                "React",
+              ]}
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={finaura}
